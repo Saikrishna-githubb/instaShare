@@ -1,0 +1,44 @@
+.slick-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.user-story-image {
+  width: 50px;
+  border-radius: 50px;
+  padding: 1.5px;
+  background-image: linear-gradient(
+    314.35deg,
+    #e20337 6.03%,
+    #7700c3 73.23%,
+    #c60188 40.88%
+  );
+}
+
+.story-username {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #262626;
+  text-align: center;
+}
+
+.nav-bg-dark {
+  background-color: #000000;
+}
+
+.nav-bg-light {
+  background-color: #ffffff;
+}
+
+.list-text-light-theme {
+  color: #262626;
+}
+
+.list-text-dark-theme {
+  color: #ffffff;
+}

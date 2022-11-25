@@ -1,0 +1,269 @@
+.home-bg-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.home-content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .home-content-container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .home-content-container {
+    width: 60%;
+  }
+}
+
+/*---------------- INSTA POSTS CSS ------------------*/
+
+.all-posts-list-container {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.all-posts-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.all-posts-failure-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+@media screen and (min-width: 768px) {
+  .all-posts-failure-container {
+    border: 2px solid #dbdbdb;
+    border-radius: 4px;
+    margin-bottom: 50px;
+  }
+}
+
+.all-posts-failure-alert-icon {
+  width: 50px;
+  height: 50px;
+  color: #4094ef;
+}
+
+.all-posts-failure-desc {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  color: #262626;
+}
+
+.all-posts-failure-retry-button {
+  height: 32px;
+  width: 102px;
+  font-family: Roboto;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #4094ef;
+  border: none;
+  border-radius: 8px;
+  padding: 8px, 24px, 8px, 24px;
+  outline: none;
+  cursor: pointer;
+}
+
+/*---------------- INSTA STORIES CSS ------------------*/
+
+.stories-container {
+  padding: 10px 40px;
+  border-bottom: 2px solid #c6c6c8;
+}
+
+@media screen and (min-width: 768px) {
+  .stories-container {
+    border: none;
+    padding-top: 40px;
+  }
+}
+
+.slick-prev:before {
+  color: black;
+}
+
+.slick-next:before {
+  color: #989898;
+}
+
+.stories-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+}
+
+.stories-failure-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stories-failure-alert-icon {
+  width: 25px;
+  height: 25px;
+  color: #4094ef;
+}
+
+.stories-failure-desc {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #262626;
+}
+
+.stories-failure-retry-button {
+  height: 28px;
+  width: 80px;
+  font-family: Roboto;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #4094ef;
+  border: none;
+  border-radius: 8px;
+  padding: 8px, 24px, 8px, 24px;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/*---------------- SEARCH RESULTS CSS ------------------*/
+
+.search-heading {
+  display: none;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  color: #262626;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .search-heading {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .search-section-container {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 16px rgba(123, 135, 148, 0.16);
+    border-radius: 16px;
+    padding: 25px;
+  }
+}
+
+.search-posts-list-container {
+  list-style-type: none;
+  padding: 0px;
+  width: 100%;
+  margin: 0px;
+}
+
+.search-not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.search-not-found-image {
+  width: 300px;
+}
+
+.search-not-found-title {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: #262626;
+}
+
+.search-not-found-desc {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  color: #989898;
+  margin-top: 15px;
+}
+
+.search-loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.search-failure-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.search-failure-image {
+  width: 250px;
+}
+
+.search-failure-desc {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #262626;
+  margin-top: 30px;
+}
+
+.search-failure-retry-button {
+  height: 32px;
+  width: 102px;
+  font-family: Roboto;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #4094ef;
+  border: none;
+  border-radius: 8px;
+  padding: 8px, 24px, 8px, 24px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.nav-bg-dark {
+  background-color: #000000;
+}
+
+.nav-bg-light {
+  background-color: #ffffff;
+}
+
+.list-text-light-theme {
+  color: #262626;
+}
+
+.list-text-dark-theme {
+  color: #ffffff;
+}
