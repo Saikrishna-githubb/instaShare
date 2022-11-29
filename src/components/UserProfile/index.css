@@ -266,10 +266,9 @@
 .user-profile-posts-list-container {
   list-style-type: none;
   padding: 0px;
-  width: 100%;
-  display: grid;
-  grid-gap: 3px;
-  grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+  width: 200%;
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 5px;
@@ -288,6 +287,13 @@
 .user-profile-post-image {
   width: 118px;
   height: 118px;
+}
+
+@media screen and (min-width: 768px) {
+  .user-profile-post-image {
+    width: 310px;
+    height: 310px;
+  }
 }
 
 .user-profile-loader-container {
